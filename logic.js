@@ -205,7 +205,14 @@ function pullStats(imagenumber){
  // console.log(imagefilename)
 
 
+image1nametext = "ITEM 1 TEXT THROWN IN"
+// item[item1].name = image1nametext
+
+
  document.getElementById("item1-image").src=imagefilename;
+ document.getElementById("name1").innerHTML = image1nametext;
+
+
  // document.getElementById("item2-image").src="item2.jpg";
  // document.getElementById("combo-image").src="combo.jpg";
 
