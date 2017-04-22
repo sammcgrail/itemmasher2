@@ -205,12 +205,17 @@ function pullStats(imagenumber){
  // console.log(imagefilename)
 
 
-image1nametext = "ITEM 1 TEXT THROWN IN"
-// item[item1].name = image1nametext
+ image1nametext = "ITEM 1 TEXT THROWN IN"
+ image1costtext = 2435
+ image1statstext = "ITEM DESC LONG TEXT LONG TEXT TEXT THROWN IN"
 
 
  document.getElementById("item1-image").src=imagefilename;
  document.getElementById("name1").innerHTML = image1nametext;
+ document.getElementById("cost1").innerHTML = image1costtext;
+ document.getElementById("stats1").innerHTML = image1statstext;
+
+
 
 
  // document.getElementById("item2-image").src="item2.jpg";
