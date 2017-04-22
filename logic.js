@@ -839,13 +839,7 @@ function pullStats(imagenumber){
   }
 ]
 
-  console.log(imagenumber)
-  console.log("item stats")
-  // console.log(dictionary.id)
-  // console.log(dictionary.name)
-  // console.log(item.id)
-
- // console.log("file name id number of item " + imagenumber)
- // console.log( "Limited to 1.\nUNIQUE Passive: Enhanced Movement: +25 Movement Speed")
-
+ console.log("End of pullState function - ile name id number of item " + imagenumber)
+ imagefilename = imagenumber + ".png"
+ console.log(imagefilename)
 }

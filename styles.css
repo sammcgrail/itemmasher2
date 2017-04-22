@@ -37,7 +37,7 @@ button {
 
 #middle {
   position: absolute;
-  top: 35%;
+  top: 22%;
   width: 100%;
 }
 
@@ -92,6 +92,7 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
   text-align: center;
 
 }
@@ -110,6 +111,7 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
   text-align: center;
 }
 
@@ -122,12 +124,14 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
   text-align: center;
 }
 
 .name {
   font-size: 24px;
-  text-align: center;
+  position: relative;
+  left: 10px;
 }
 
 .cost {
@@ -139,4 +143,6 @@ div.item2{
 .stats {
   font-size: 18px;
   text-align: center;
+  margin: 6px;
+
 }
