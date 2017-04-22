@@ -21,13 +21,13 @@
 	"name": "Boots of Speed",
   "cost": 300,
   "stats": [0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0],
-	"desc": "Limited to 1.  \n UNIQUE Passive: Enhanced Movement: +25 Movement Speed",
+	"desc": "Limited to 1.\nUNIQUE Passive: Enhanced Movement: +25 Movement Speed",
 },
 
 {
 	"id": 2,
 	"name": "fairie charm",
   "cost": 125,
-  "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  "stats": [0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	"desc": "Gives mana regen",
 },
