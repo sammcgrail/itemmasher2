@@ -50,6 +50,8 @@ button {
   border: solid 1px;
   border-color: white;
   border-radius: 10px;
+  text-align: center;
+
 }
 
 #combo {
@@ -61,6 +63,7 @@ button {
   border: solid 1px;
   border-color: white;
   border-radius: 10px;
+  text-align: center;
 }
 
 #item2 {
@@ -72,4 +75,5 @@ button {
   border: solid 1px;
   border-color: white;
   border-radius: 10px;
+  text-align: center;
 }
