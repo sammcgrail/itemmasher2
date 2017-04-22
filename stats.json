@@ -1,0 +1,33 @@
+
+"stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+{
+  "stats": [
+    "health", "mana", "ad", "ap", "hpregen",
+    "mpregen", "movespeed", "attackspeed", "lifesteal", "spellvamp",
+    "armor", "mr", "lethality", "lethalityperc", "mpen",
+    "mpenperc", "gp5", "cdr", "crit" ]
+},
+
+{
+	"id": 0,
+	"name": "TEMPLATE",
+  "cost": 9000,
+  "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	"desc": "long string",
+},
+
+{
+	"id": 1001,
+	"name": "Boots of Speed",
+  "cost": 300,
+  "stats": [0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0],
+	"desc": "Limited to 1.  \n UNIQUE Passive: Enhanced Movement: +25 Movement Speed",
+},
+
+{
+	"id": 2,
+	"name": "fairie charm",
+  "cost": 125,
+  "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	"desc": "Gives mana regen",
+},
