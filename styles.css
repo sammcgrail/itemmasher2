@@ -47,7 +47,7 @@ div.item1{
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 250px;
+  width: 290px;
   left: 5%;
   background-color: white;
   height: 150px;
@@ -61,7 +61,7 @@ div.combo{
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 250px;
+  width: 290px;
   left: 20%;
   background-color: white;
   height: 150px;
@@ -75,7 +75,7 @@ div.item2{
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 250px;
+  width: 290px;
   left: 35%;
   background-color: white;
   height: 150px;
@@ -94,8 +94,8 @@ div.item2{
   border-color: orange;
   border-radius: 10px;
   margin: 6px;
-  margin-top: 19px;
   text-align: center;
+
 }
 
 .info {
@@ -113,7 +113,6 @@ div.item2{
   border-color: orange;
   border-radius: 10px;
   margin: 6px;
-    margin-top: 19px;
   text-align: center;
 }
 
@@ -127,7 +126,6 @@ div.item2{
   border-color: orange;
   border-radius: 10px;
   margin: 6px;
-    margin-top: 19px;
   text-align: center;
 }
 

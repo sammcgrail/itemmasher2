@@ -20,7 +20,7 @@ function pullStats(imagenumber){
   	"name": "Boots of Speed",
     "cost": 300,
     "stats": [0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0],
-  	"desc": "Limited to 1.\nUNIQUE Passive: Enhanced Movement: +25 Movement Speed",
+  	"desc": "Speed increase!",
     "index": 1,
   },
 
@@ -29,16 +29,16 @@ function pullStats(imagenumber){
   	"name": "Faerie Charm",
     "cost": 125,
     "stats": [0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0],
-  	"desc": "Regens mana",
+  	"desc": "Mana ++",
     "index": 2,
   },
 
   {
   	"id": 1006,
-  	"name": "Rejuvenation Bead",
-    "cost": 150,
+  	"name": "Combined thing!",
+    "cost": 425,
     "stats": [0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-  	"desc": "Health regen thing",
+  	"desc": "Combined output",
     "index": 3,
   },
 
@@ -202,6 +202,17 @@ function pullStats(imagenumber){
 
  // item.indexOf[item
 
+ //
+ // var item1Image = document.getElementById("item1-image");
+ // if (item1Image.src == "") {
+ //   document.getElementById("item1-image").src=imagefilename;
+ // } else if (item1Image.src == imagefilename) {
+ //   document.getElementById("item1-image").src= "";
+ // }
+ // else if (item1Image.src != "" && item1Image.src != imagefilename) {
+ //   document.getElementById("item2-image").src=imagefilename;
+ // }
+
  console.log(item[1])
 
  image1nametext = item[item[1].index].name
@@ -241,5 +252,7 @@ function pullStats(imagenumber){
 
  // document.getElementById("item2-image").src="item2.jpg";
  // document.getElementById("combo-image").src="combo.jpg";
+
+
 
 }
