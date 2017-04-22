@@ -41,35 +41,98 @@ button {
   width: 100%;
 }
 
-#item1 {
+div.item1{
   position: relative;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  left: 5%;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  border: solid 3px;
+  border-color: black;
+}
+
+div.combo{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  left: 20%;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  border: solid 3px;
+  border-color: black;
+}
+
+div.item2{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  left: 35%;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  border: solid 3px;
+  border-color: black;
+}
+
+#item1-image {
+  position: absolute;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
-  left: 10%;
+  left: 0%;
   border: solid 1px;
-  border-color: white;
+  border-color: orange;
   border-radius: 10px;
 }
 
-#combo {
+.info {
   position: relative;
+  display: block;
+}
+
+#combo-image {
+  position: absolute;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
-  left: 37.5%;
+  left: 0%;
   border: solid 1px;
-  border-color: white;
+  border-color: orange;
   border-radius: 10px;
 }
 
-#item2 {
-  position: relative;
+#item2-image {
+  position: absolute;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
-  left: 65%;
+  left: 0%;
   border: solid 1px;
-  border-color: white;
+  border-color: orange;
   border-radius: 10px;
+}
+
+.name {
+  font-size: 24px;
+  text-align: center;
+}
+
+.cost {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+
+.stats {
+  font-size: 18px;
+  text-align: center;
 }
