@@ -198,24 +198,43 @@ function pullStats(imagenumber){
 // item1Name = item[item1].name
 // item2Name = item[item2].name
 
-
-
  // console.log("End of pullState function - file name id number of item " + imagenumber)
  imagefilename = "./item/" + imagenumber + ".png"
  // console.log(imagefilename)
 
 
- image1nametext = "ITEM 1 TEXT THROWN IN"
- image1costtext = 2435
- image1statstext = "ITEM DESC LONG TEXT LONG TEXT TEXT THROWN IN"
+ image1nametext = item[1].name
+ image1costtext = item[1].cost
+ image1statstext = item[1].stats.length
+ image1desctext = item[1].desc
 
-
- document.getElementById("item1-image").src=imagefilename;
+ document.getElementById("item1-image").src= imagefilename;
  document.getElementById("name1").innerHTML = image1nametext;
  document.getElementById("cost1").innerHTML = image1costtext;
  document.getElementById("stats1").innerHTML = image1statstext;
+ document.getElementById("desc1").innerHTML = image1desctext;
 
+ image2nametext = item[2].name
+ image2costtext = item[2].cost
+ image2statstext = item[2].stats.length
+ image2desctext = item[2].desc
 
+ document.getElementById("item2-image").src= imagefilename;
+ document.getElementById("name2").innerHTML = image2nametext;
+ document.getElementById("cost2").innerHTML = image2costtext;
+ document.getElementById("stats2").innerHTML = image2statstext;
+ document.getElementById("desc2").innerHTML = image2desctext;
+
+ image2nametext = item[2].name
+ image2costtext = item[2].cost
+ image2statstext = item[2].stats.length
+ image2desctext = item[2].desc
+
+ document.getElementById("combo-image").src= imagefilename;
+ document.getElementById("namecombo").innerHTML = imagecombonametext;
+ document.getElementById("costcombo").innerHTML = imagecombocosttext;
+ document.getElementById("statscombo").innerHTML = imagecombostatstext;
+ document.getElementById("desccombo").innerHTML = imagecombodesctext;
 
 
  // document.getElementById("item2-image").src="item2.jpg";
