@@ -4,6 +4,7 @@ body {
   left: 5%;
   background-color: black;
   margin-bottom: 250px;
+  font-family: 'Roboto', sans-serif;
 }
 button {
   height: 64px;
@@ -37,7 +38,7 @@ button {
 
 #middle {
   position: absolute;
-  top: 35%;
+  top: 22%;
   width: 100%;
 }
 
@@ -92,6 +93,8 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
+  text-align: center;
 }
 
 .info {
@@ -108,6 +111,8 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
+  text-align: center;
 }
 
 #item2-image {
@@ -119,11 +124,14 @@ div.item2{
   border: solid 1px;
   border-color: orange;
   border-radius: 10px;
+  margin: 6px;
+  text-align: center;
 }
 
 .name {
   font-size: 24px;
-  text-align: center;
+  position: relative;
+  left: 10px;
 }
 
 .cost {
@@ -135,4 +143,6 @@ div.item2{
 .stats {
   font-size: 18px;
   text-align: center;
+  margin: 6px;
+
 }
