@@ -21,6 +21,7 @@ function pullStats(imagenumber){
     "cost": 300,
     "stats": [0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0],
   	"desc": "Limited to 1.\nUNIQUE Passive: Enhanced Movement: +25 Movement Speed",
+    "index": 1,
   },
 
   {
@@ -29,6 +30,7 @@ function pullStats(imagenumber){
     "cost": 125,
     "stats": [0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0],
   	"desc": "Regens mana",
+    "index": 2,
   },
 
   {
@@ -37,6 +39,7 @@ function pullStats(imagenumber){
     "cost": 150,
     "stats": [0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
   	"desc": "Health regen thing",
+    "index": 3,
   },
 
   {
@@ -191,22 +194,21 @@ function pullStats(imagenumber){
   	"desc": "Passive: Restores 6 Health every 5 seconds.\nUNIQUE Passive: Blocks 8 damage from single target attacks and spells from champions.",
   },
 ]
-//
-// item1 = getElementby
-// item2 =
-// combo =
-// item1Name = item[item1].name
-// item2Name = item[item2].name
+
 
  // console.log("End of pullState function - file name id number of item " + imagenumber)
  imagefilename = "./item/" + imagenumber + ".png"
  // console.log(imagefilename)
 
+ // item.indexOf[item
 
- image1nametext = item[1].name
- image1costtext = item[1].cost
- image1statstext = item[1].stats.length
- image1desctext = item[1].desc
+ console.log(item[1])
+
+ image1nametext = item[item[1].index].name
+ image1costtext = item[item[1].index].cost
+ image1statstext = item[item[1].index].stats.length
+ image1desctext = item[item[1].index].desc
+
 
  document.getElementById("item1-image").src= imagefilename;
  document.getElementById("name1").innerHTML = image1nametext;
@@ -225,10 +227,10 @@ function pullStats(imagenumber){
  document.getElementById("stats2").innerHTML = image2statstext;
  document.getElementById("desc2").innerHTML = image2desctext;
 
- image2nametext = item[2].name
- image2costtext = item[2].cost
- image2statstext = item[2].stats.length
- image2desctext = item[2].desc
+ imagecombonametext = item[3].name
+ imagecombocosttext = item[3].cost
+ imagecombostatstext = item[3].stats.length
+ imagecombodesctext = item[3].desc
 
  document.getElementById("combo-image").src= imagefilename;
  document.getElementById("namecombo").innerHTML = imagecombonametext;
