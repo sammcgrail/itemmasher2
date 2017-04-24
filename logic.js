@@ -2106,9 +2106,9 @@ else if((item1select==true) && (item2select==false) && (imageindex==selectedItem
 }
 
 //case where both slots get filled, automatically create combo
-  if((item1select==true) && item2select==true){
-    combineItems(item1index, item2index);
-}
+//   if((item1select==true) && item2select==true){
+//     combineItems(item1index, item2index);
+// }
 
 
 //  //do something for combo item
