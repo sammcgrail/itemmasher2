@@ -25,13 +25,13 @@ button {
   bottom: 0;
 }
 
+
 #top {
   position: absolute;
   text-align: center;
   background-color: #F8A13F;
   top: 0;
   width: 100%;
-  height: 45px;
   line-height: 0px;
   border: solid 2px;
   border-color: yellow;
