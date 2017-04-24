@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Item Masher</title>
+
+    <title>LoL Item Masher</title>
+
     <link rel='shortcut icon' href='./lol.ico' type='image/x-icon'/ >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="logic.js"></script>
@@ -229,38 +232,44 @@
   <button onclick="pullStats(3902,215)" style="background: url(item/3902.png)"></button>
   <button onclick="pullStats(3903,216)" style="background: url(item/3903.png)"></button>
 
+  <font color=white><br>
+  <button onclick="resetStats()" style="background: url(item/3637.png)" style="font-style: white"></button>: RESET <br>
+  <button onclick="swapItems()" style="background: url(item/3642.png)"></button>: SWAP
+  </font>
+
     <div id="navbar">
       <div id="top">
-        <h1>League Item Masher!</h1>
+        <h1>LoL Item Masher!</h1>
       </div>
       <div id="middle">
         <div class="item1">
-          <img id="item1-image"></img>
+          <img id="item1-image" style="background: url(item/3637.png)"></img>
           <div class="info">
-            <span id="name1">Item Name</span></br>
-            <span id="cost1">Item Cost</span></br>
-            <span id="stats1">Item Stats</span></br>
-            <span id="desc1">Item Desc</span>
+            <span id="name1">Your first item goes here.</span></br>
+            <span id="cost1"></span></br>
+            <span id="stats1"></span></br>
+            <span id="desc1"></span>
           </div>
         </div>
         <div class="combo">
-          <img id="combo-image"></img>
+          <img id="combo-image" style="background: url(item/3637.png)"></img>
           <div class="info">
-            <span id="namecombo">Item Name</span></br>
-            <span id="costcombo">Item Cost</span></br>
-            <span id="statscombo">Item Stats</span></br>
-            <span id="desccombo">Item Desc</span>
+            <span id="namecombo">Your recipe will show up here.</span></br>
+            <span id="costcombo"></span></br>
+            <span id="statscombo"></span></br>
+            <span id="desccombo">Choose Wisely!</span>
           </div>
         </div>
         <div class="item2">
-          <img id="item2-image"></img>
+          <img id="item2-image" style="background: url(item/3637.png)"></img>
           <div class="info">
-            <span id="name2">Item Name</span></br>
-            <span id="cost2">Item Cost</span></br>
-            <span id="stats2">Item Stats</span></br>
-            <span id="desc2">Item Desc</span>
+            <span id="name2">Your second item goes here.</span></br>
+            <span id="cost2"></span></br>
+            <span id="stats2"></span></br>
+            <span id="desc2"></span>
           </div>
         </div>
+
       </div>
     </div>
   </body>
