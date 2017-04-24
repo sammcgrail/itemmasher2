@@ -23,10 +23,10 @@ var item2desc = ""
 var selectedItems = [null, null];
 
 var stats = ["Health", "Mana", "Attack Damage", "Ability Power",
-  "% Base Health Regen","% Base Mana Regen", "Movespeed", "Attack Speed",
+  "% Base Health Regen","% Base Mana Regen", "% Movespeed", "% Attack Speed",
   "% Lifesteal", "% Omnivamp","Armor", "Magic Resistance",
   "Lethality", "% Armor Pen", "Magic Pen","% Magic Pen",
-  "Gold/5", "Cooldown Reduction", "% Crit Chance"]
+  "Gold per 10 seconds", "Cooldown Reduction", "% Crit Chance"]
 
 
 function imgRedirect(destination){
@@ -49,7 +49,7 @@ function pullStats(imagenumber, imageindex){
   	"id": 1001,
   	"name": "Boots of Speed",
     "cost": 300,
-    "stats": [0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0],
+    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
   	"desc": "Limited to 1.<br>UNIQUE Passive: Enhanced Movement: +25 Movement Speed",
     "index": 1,
   },
@@ -263,253 +263,254 @@ function pullStats(imagenumber, imageindex){
 
     {
     "id": 1057,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "name": "Negatron Cloak",
+    "cost": 720,
+    "stats": [0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0],
     "desc": "",
     "index": 25,
     },
 
     {
     "id": 1058,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "name": "Needlessly Large Rod",
+    "cost": 1250,
+    "stats": [0,0,0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     "desc": "",
     "index": 26,
     },
 
     {
     "id": 1082,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "The Dark Seal",
+    "cost": 350,
+    "stats": [0,100,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "+25% Increased Healing from Potions <br> UNIQUE Passive - Dread: Grants +3 Ability Power per Glory. <br> UNIQUE Passive - Do or Die: Grants 2 Glory for a champion kill or 1 Glory for an assist, up to 10 Glory total. Lose 4 Glory on death.",
     "index": 27,
     },
 
     {
     "id": 1083,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Cull",
+    "cost": 450,
+    "stats": [0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "+3 Life on Hit <br> UNIQUE Passive: Killing a lane minion grants 1 additional Gold. Killing 100 lane minions grants an additional 350 gole immediately and disables this passive.",
     "index": 28,
     },
 
     {
     "id": 1400,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "name": "Stalker's Blade: Warrior",
+    "cost": 2625,
+    "stats": [0,0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0],
     "desc": "",
     "index": 29,
     },
 
     {
     "id": 1401,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Stalker's Blade: Cinderhulk",
+    "cost": 2625,
+    "stats": [400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "+15% Bonus Health <br> UNIQUE Passive - Immolate: Deals 7 (+2 per champion level) magic damage a second to nearby enemies while in combat. Deals 100% bonus damage to monsters.",
     "index": 30,
     },
 
     {
     "id": 1402,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Stalker's Blade: Runic Echoes",
+    "cost": 2625,
+    "stats": [0,0,0,60,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive - Echo: Gain charges upon moving or casting. At 100 charges, the next damaging spell hit expends all charges to deal 60 (+10% of Ability Power) bonus magic damage to up to 4 targets on hit. <br> This effect deals 250% damage to Large Monsters. Hitting a Large Monster with this effect will restore 18% of your missing Mana.",
     "index": 31,
     },
 
     {
     "id": 1408,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "name": "Tracker's Knife: Warrior",
+    "cost": 2625,
+    "stats": [0,0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0],
     "desc": "",
     "index": 32,
     },
 
     {
     "id": 1410,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Tracker's Knife: Runic Echoes",
+    "cost": 2625,
+    "stats": [0,0,0,60,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive - Echo: Gain charges upon moving or casting. At 100 charges, the next damaging spell hit expends all charges to deal 60 (+10% of Ability Power) bonus magic damage to up to 4 targets on hit. <br> This effect deals 250% damage to Large Monsters. Hitting a Large Monster with this effect will restore 18% of your missing Mana.",
     "index": 33,
     },
 
     {
     "id": 1412,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "name": "Skirmisher's Sabre: Warrior",
+    "cost": 2625,
+    "stats": [0,0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0],
     "desc": "",
     "index": 34,
     },
 
     {
     "id": 1413,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Skirmisher's Sabre: Cinderhulk",
+    "cost": 2625,
+    "stats": [400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "+15% Bonus Health <br> UNIQUE Passive - Immolate: Deals 7 (+2 per champion level) magic damage a second to nearby enemies while in combat. Deals 100% bonus damage to monsters.",
     "index": 35,
     },
 
     {
     "id": 1414,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Skirmisher's Sabre: Runic Echoes",
+    "cost": 2625,
+    "stats": [0,0,0,60,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive - Echo: Gain charges upon moving or casting. At 100 charges, the next damaging spell hit expends all charges to deal 60 (+10% of Ability Power) bonus magic damage to up to 4 targets on hit. <br> This effect deals 250% damage to Large Monsters. Hitting a Large Monster with this effect will restore 18% of your missing Mana.",
     "index": 36,
     },
 
     {
     "id": 1416,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Stalker's Blade: Bloodrazer",
+    "cost": 2625,
+    "stats": [0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive: Basic attacks deal 4% of the target's maximum Health in bonus physical damage (max 75 vs. monsters and minions) on hit.",
     "index": 37,
     },
 
     {
     "id": 1418,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Tracker's Knife: Bloodrazer",
+    "cost": 2625,
+    "stats": [0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive: Basic attacks deal 4% of the target's maximum Health in bonus physical damage (max 75 vs. monsters and minions) on hit.",
     "index": 38,
     },
 
     {
     "id": 1419,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Skirmisher's Sabre: Bloodrazer",
+    "cost": 2625,
+    "stats": [0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive: Basic attacks deal 4% of the target's maximum Health in bonus physical damage (max 75 vs. monsters and minions) on hit.",
     "index": 39,
     },
 
     {
     "id": 2003,
-    "name": "",
-    "cost": null,
+    "name": "Health Potion",
+    "cost": 50,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Limited to 5 at one time. Limited to 1 type of Healing Potion. <br> Click to Consume: Restores 150 Health over 15 seconds.",
     "index": 40,
     },
 
     {
     "id": 2009,
-    "name": "",
-    "cost": null,
+    "name": "Total Biscuit of Rejuvenation",
+    "cost": 0,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Click to Consume: Restores 80 Health and 50 Mana over 10 seconds.",
     "index": 41,
     },
 
     {
     "id": 2015,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Kircheis Shard",
+    "cost": 750,
+    "stats": [0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "Passive: Moving and attacking will make an attack Energized. <br> UNIQUE Passive - Energized Strike: Your Energized attacks deal 40 bonus magic damage on hit.",
     "index": 42,
     },
 
     {
     "id": 2031,
-    "name": "",
-    "cost": null,
+    "name": "Refillable Potion",
+    "cost": 150,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Limited to 1 type of Healing Potion. <br> UNIQUE Active: Consumes a charge to restore 125 Health over 12 seconds. Holds up to 2 charges and refills upon visiting the shop.",
     "index": 43,
     },
 
     {
     "id": 2032,
-    "name": "",
-    "cost": null,
+    "name": "Hunter's Potion",
+    "cost": 400,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Limited to 1 type of Healing Potion. <br> UNIQUE Active: Consumes a charge to restore 60 Health and 35 Mana over 8 seconds. Holds up to 5 charges and refills upon visiting the shop.",
     "index": 44,
     },
 
     {
     "id": 2033,
-    "name": "",
-    "cost": null,
+    "name": "Corrupting Potion",
+    "cost": 500,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Limited to 1 type of Healing Potion. <br> UNIQUE Active: Consumes a charge to restore 125 health and 75 Mana over 12 seconds and grants Touch of Corruption during that time. Holds up to 3 charges and refills upon visiting the shop.",
+    // even more text here that describes what Touch of Corruption does, but.... meh
     "index": 45,
     },
 
     {
     "id": 2045,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Ruby Sightstone",
+    "cost": 1600,
+    "stats": [500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive: Item Active cooldowns are reduced by 20%. <br> UNIQUE Active - Warding: Consumes a charge to place a Stealth Ward that reveals the surrounding area for 150 seconds. Holds up to 4 charges and refills when visiting the shop.",
     "index": 46,
     },
 
     {
     "id": 2047,
-    "name": "",
-    "cost": null,
+    "name": "Oracle's Extract",
+    "cost": 300,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Click to Consume: Grants detection of nearby invisible or unseen enemy units for 5 minutes.",
     "index": 47,
     },
 
     {
     "id": 2049,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Sightstone",
+    "cost": 800,
+    "stats": [150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Active - Warding: Consumes a charge to place a Stealth Ward that reveals the surrounding  area for 150 seconds. Holds up to 3 charges which refill upon visiting the shop.",
     "index": 48,
     },
 
     {
     "id": 2051,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Guardian's Horn",
+    "cost": 950,
+    "stats": [150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "desc": "Passive: Restores 20 Health every 5 seconds. <br> UNIQUE Passive: Blocks 12 damage from attacks and spells from champions (25% effectiveness vs. damage over time abilities).",
     "index": 49,
     },
 
     {
     "id": 2053,
-    "name": "",
-    "cost": null,
-    "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "name": "Raptor Cloak",
+    "cost": 1200,
+    "stats": [0,0,0,0,125,0,0,0,0,0,40,0,0,0,0,0,0,0,0],
+    "desc": "UNIQUE Passive - Point Runner: Builds up to +20% Movement Speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
     "index": 50,
     },
 
     {
     "id": 2054,
-    "name": "",
-    "cost": null,
+    "name": "Diet Poro-Snax",
+    "cost": 0,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "All the flavor of regular Poro-Snax, without the calories! Keeps your Poro happy AND healthy. <br> Click to Consume: Gives your Poros a delicious healthy treat.",
     "index": 51,
     },
 
     {
     "id": 2055,
-    "name": "",
-    "cost": null,
+    "name": "Control Ward",
+    "cost": 75,
     "stats": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    "desc": "",
+    "desc": "Can only carry 3 Control Wards in inventory. <br> Click to Consume: Places a ward that grants vision of the surrounding area. This device will also reveal invisible traps and reveal/disable wards. Control Wards do not disable other Control Wards. Camouflaged units will also be revealed. <br> Limit 1 Control Ward on the map per player.",
     "index": 52,
     },
 
@@ -2024,6 +2025,7 @@ trayitems = [
  // console.log("End of pullState function - file name id number of item " + imagenumber)
  image1filename = "./item/" + imagenumber + ".png"
  image2filename = "./item/" + imagenumber + ".png"
+ combofilename = "./item/3410.png"
  // console.log(imagefilename)
 
  //
@@ -2057,13 +2059,24 @@ function statsToString(imageindex){
     return statstring;
 };
 
-// item is {id, name, cost, stats[], desc, index}
-// function combineItems(index1, index2){
-//   combo = {};
-//   statstring = "";
-//
-//   }
-// }
+function comboStatsToString(){
+    comboarray = comboStats;
+    combostatstring = "";
+    for(i=0;i<stats.length;i++){
+      if(comboStats[i]!=0){
+        comboarray[i] = "+ " + comboStats[i] + " " + stats[i] + "<br>";
+        console.log(comboarray);
+        }
+      }
+    comboarray = comboarray.filter(function( element ) {
+   return element !== 0;
+});
+    for(j=0;j<comboarray.length;j++){
+      combostatstring += comboarray[j];
+    }
+    return combostatstring;
+};
+
 
 // case where both slots empty, nothing picked yet
 if((item1select==false) && (item2select==false) && (selectedItems[0]==null) && (selectedItems[1]==null)){
@@ -2106,47 +2119,48 @@ else if((item1select==true) && (item2select==false) && (imageindex==selectedItem
 }
 
 //case where both slots get filled, automatically create combo
-//   if((item1select==true) && item2select==true){
-//     combineItems(item1index, item2index);
-// }
-
-
-//  //do something for combo item
-//  imagecombonametext = item[3].name
-//  imagecombocosttext = item[3].cost
-//  imagecombostatstext = item[3].stats.length
-//  imagecombodesctext = item[3].desc
-//  // document.getElementById("combo-image").src= "";
-//  document.getElementById("namecombo").innerHTML = comboName;
-//  document.getElementById("costcombo").innerHTML = comboCost;
-//  document.getElementById("statscombo").innerHTML = comboStats;
-//  document.getElementById("desccombo").innerHTML = comboDesc;
-
-
+if((item1select==true) && item2select==true){
+    comboName = "MA BOI"
+    comboCost = item[selectedItems[0]].cost + item[selectedItems[1]].cost;
+    combocosttext = comboCost;
+    for(i=0;i<stats.length;i++){
+      comboStats[i] = item[selectedItems[0]].stats[i]+item[selectedItems[1]].stats[i];
+    }
+    combostatstext = comboStatsToString();
+    comboDesc = "It's craAaAaAaazy good!!"
+    combodesctext = comboDesc;
+    document.getElementById("combo-image").src= combofilename;
+    document.getElementById("namecombo").innerHTML = comboName;
+    document.getElementById("costcombo").innerHTML = combocosttext + " g";
+    document.getElementById("statscombo").innerHTML = combostatstext;
+    document.getElementById("desccombo").innerHTML = combodesctext;
 }
 
-function resetStats(){
-  document.getElementById("item1-image").src= "./item/3637.png";
-  document.getElementById("name1").innerHTML = "Your first item goes here.";
-  document.getElementById("cost1").innerHTML = null
-  document.getElementById("stats1").innerHTML = null
-  document.getElementById("desc1").innerHTML = ""
-  document.getElementById("item2-image").src= "./item/3637.png";
-  document.getElementById("name2").innerHTML = "Your second item goes here.";
-  document.getElementById("cost2").innerHTML = null
-  document.getElementById("stats2").innerHTML = null
-  document.getElementById("desc2").innerHTML = ""
-  document.getElementById("combo-image").src= "./item/3637.png";
-  document.getElementById("namecombo").innerHTML = "Your recipe will show up here.";
-  document.getElementById("costcombo").innerHTML = null
-  document.getElementById("statscombo").innerHTML = null
-  document.getElementById("desccombo").innerHTML = "Choose Wisely!"
-  item1select = false;
-  item2select = false;
-  selectedItems[0] = null;
-  selectedItems[1] = null;
+
+ }
+
+ function resetStats(){
+   document.getElementById("item1-image").src= "./item/3637.png";
+   document.getElementById("name1").innerHTML = "Your first item goes here.";
+   document.getElementById("cost1").innerHTML = null
+   document.getElementById("stats1").innerHTML = null
+   document.getElementById("desc1").innerHTML = ""
+   document.getElementById("item2-image").src= "./item/3637.png";
+   document.getElementById("name2").innerHTML = "Your second item goes here.";
+   document.getElementById("cost2").innerHTML = null
+   document.getElementById("stats2").innerHTML = null
+   document.getElementById("desc2").innerHTML = ""
+   document.getElementById("combo-image").src= "./item/3637.png";
+   document.getElementById("namecombo").innerHTML = "Your recipe will show up here.";
+   document.getElementById("costcombo").innerHTML = null
+   document.getElementById("statscombo").innerHTML = null
+   document.getElementById("desccombo").innerHTML = "Choose Wisely!"
+   item1select = false;
+   item2select = false;
+   selectedItems[0] = null;
+   selectedItems[1] = null;
  };
 
-function swapItems(){
-
-};
+// function swapItems(){
+//
+// };

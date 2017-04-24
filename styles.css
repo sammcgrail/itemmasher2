@@ -50,6 +50,7 @@ div.item1{
   text-align: center;
   width: 330px;
   left: 6%;
+  overflow: auto;
   background-color: white;
   height: 175px;
   border-radius: 10px;
@@ -64,6 +65,7 @@ div.combo{
   text-align: center;
   width: 330px;
   left: 17%;
+  overflow: auto;
   background-color: white;
   height: 175px;
   border-radius: 10px;
@@ -78,6 +80,7 @@ div.item2{
   text-align: center;
   width: 330px;
   left: 30%;
+  overflow: auto;
   background-color: white;
   height: 175px;
   border-radius: 10px;
@@ -106,7 +109,8 @@ div.item2{
   margin-top: 1%;
   position: relative;
   display: block;
-  font-size: 15px;
+  font-size: 15px
+  overflow:auto;
 }
 
 #combo-image {
