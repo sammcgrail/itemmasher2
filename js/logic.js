@@ -780,7 +780,7 @@ function pullStats(imagenumber, imageindex){
 
     {
       "id": 3047,
-      "name": "Ninja tabi",
+      "name": "Ninja Tabi",
       "cost": 1100,
       "stats": [0,0,0,0,0,0,0,0,0,0,30,0,0,0,0,0,0,0,0],
       "desc": "UNIQUE Passive: Blocks 12% of the damage from basic attacks. <br> UNIQUE Passive - Enhanced Movement: +45 Movement Speed",
