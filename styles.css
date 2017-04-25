@@ -43,16 +43,15 @@ button {
   width: 100%;
 }
 
+div.thumbnail {
+  margin: 8px;
+}
 div.item1{
   position: relative;
   vertical-align: top;
-  display: inline-block;
   text-align: center;
-  width: 330px;
-  left: 6%;
   overflow: auto;
   background-color: white;
-  height: 175px;
   border-radius: 10px;
   border: solid 3px;
   border-color: black;
@@ -61,13 +60,9 @@ div.item1{
 div.combo{
   position: relative;
   vertical-align: top;
-  display: inline-block;
   text-align: center;
-  width: 330px;
-  left: 17%;
   overflow: auto;
   background-color: white;
-  height: 175px;
   border-radius: 10px;
   border: solid 3px;
   border-color: black;
@@ -76,22 +71,16 @@ div.combo{
 div.item2{
   position: relative;
   vertical-align: top;
-  display: inline-block;
   text-align: center;
-  width: 330px;
-  left: 30%;
   overflow: auto;
   background-color: white;
-  height: 175px;
   border-radius: 10px;
   border: solid 3px;
   border-color: black;
 }
 
-
-
 #item1-image {
-  position: absolute;
+  position: relative;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
@@ -99,9 +88,7 @@ div.item2{
   border: solid 1px;
   border-color: black;
   border-radius: 10px;
-  margin: 6px;
-  text-align: center;
-
+  text-align: left;
 }
 
 .info {
@@ -114,7 +101,7 @@ div.item2{
 }
 
 #combo-image {
-  position: absolute;
+  position: relative;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
@@ -122,12 +109,11 @@ div.item2{
   border: solid 1px;
   border-color: grey;
   border-radius: 10px;
-  margin: 6px;
-  text-align: center;
+  text-align: left;
 }
 
 #item2-image {
-  position: absolute;
+  position: relative;
   background-color: #bdbdbd;
   height: 64px;
   width: 64px;
@@ -135,8 +121,7 @@ div.item2{
   border: solid 1px;
   border-color: grey;
   border-radius: 10px;
-  margin: 6px;
-  text-align: center;
+  text-align: left;
 }
 
 .name {
@@ -146,12 +131,14 @@ div.item2{
 }
 
 .cost {
+  position: relative;
   font-size: 18px;
   font-style: italic;
   text-align: center;
 }
 
 .stats {
+  position: relative;
   font-size: 18px;
   text-align: center;
   margin: 6px;
