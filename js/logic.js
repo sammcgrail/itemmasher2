@@ -20,8 +20,8 @@ var selectedItems = [null, null];
 var stats = ["Health", "Mana", "Attack Damage", "Ability Power",
 "% Base Health Regen","% Base Mana Regen", "% Movespeed", "% Attack Speed",
 "% Lifesteal", "% Base Attack Damage","Armor", "Magic Resistance",
-"Lethality", "% Armor Pen", "Magic Pen","% Magic Pen",
-"Gold per 10 seconds", "Cooldown Reduction", "% Crit Chance"]
+"", "", "Magic Pen","",
+"Gold per 10 seconds", "% Cooldown Reduction", "% Crit Chance"]
 
 
 function imgRedirect(destination){
@@ -2144,6 +2144,20 @@ function pullStats(imagenumber, imageindex){
     document.getElementById("statscombo").innerHTML = null
     document.getElementById("desccombo").innerHTML = ""
   }
+  //case where first is re-entered while empty
+  else if((item1select==false) && (item2select=true)){
+    item1select = true;
+    selectedItems[0] = imageindex;
+    image1nametext = item[imageindex].name
+    image1costtext = item[imageindex].cost + " g"
+    image1desctext = item[imageindex].desc
+    image1statstext = statsToString(imageindex);
+    document.getElementById("item1-image").src= image1filename;
+    document.getElementById("name1").innerHTML = image1nametext;
+    document.getElementById("cost1").innerHTML = image1costtext;
+    document.getElementById("stats1").innerHTML = image1statstext;
+    document.getElementById("desc1").innerHTML = image1desctext;
+  }
 
   //case where both slots get filled, automatically create combo
   if((item1select==true) && (item2select==true)){
@@ -2152,7 +2166,15 @@ function pullStats(imagenumber, imageindex){
     combocosttext = comboCost;
     comboStats = [];
     for(i=0;i<stats.length;i++){
-      comboStats[i] = item[selectedItems[0]].stats[i]+item[selectedItems[1]].stats[i];
+      if((item[selectedItems[0]].stats[i]!==0) && ((item[selectedItems[1]].stats[i])!==0)){
+        comboStats[i] = 1.5*(item[selectedItems[0]].stats[i]+item[selectedItems[1]].stats[i]);
+      }
+      else {
+        comboStats[i] = item[selectedItems[0]].stats[i]+item[selectedItems[1]].stats[i];
+      }
+      if(comboStats[17]>40){
+        comboStats[17] = 40;
+      }
     }
     combostatstext = comboStatsToString();
     combodesctext = generateComboDesc();
